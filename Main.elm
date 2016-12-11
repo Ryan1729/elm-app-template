@@ -1,6 +1,5 @@
 module Main exposing (..)
 
-import Html.App exposing (program)
 import Html exposing (Html)
 
 
@@ -36,9 +35,9 @@ subscriptions =
     always Sub.none
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
-    program
+    Html.program
         { init = init
         , update = update
         , subscriptions = subscriptions
